@@ -49,7 +49,7 @@ export class Checker {
               (await page
                 .$("#inhalt > div.row")
                 .then((el) => el?.evaluate((e) => e.textContent))) ||
-              "empty text",
+              "unexpected result, I guess..",
           }
         );
 

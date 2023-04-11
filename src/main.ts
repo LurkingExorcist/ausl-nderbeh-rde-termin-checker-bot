@@ -1,10 +1,12 @@
 import * as dotenv from "dotenv";
 dotenv.config();
 
-import { Checker } from "./lib";
+import { Checker, launchBot } from "./lib";
 import { ALIVE_CHECK_INTERVAL, TERMIN_CHECK_INTERVAL } from "./constants";
 
 const checker = new Checker();
+
+launchBot();
 
 checker.isAlive();
 checker.hasTermin();
